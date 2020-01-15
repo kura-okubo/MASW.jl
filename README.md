@@ -11,6 +11,12 @@
 <img src="./example/functiontest.png" alt="functiontest" width="800"/>
 
 
+### Installation
+From the Julia command prompt:
+
+1. Press ] to enter pkg.
+2. Type or copy: `add https://github.com/kura-okubo/MASW.jl`
+
 #### Reference:
 > Park, C.B., Miller, R.D. and Xia, J., 1999. Multichannel analysis of surface waves. Geophysics, 64(3), pp.800-808. doi.org/10.1190/1.1444590
 
