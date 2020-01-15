@@ -1,7 +1,7 @@
 name = "MASW"
 uuid = "a6dcc7ff-e019-4a59-a0bc-6547b5210b75"
 authors = ["kurama"]
-version = "0.1.0"
+version = "1.0.0"
 
 [deps]
 FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
