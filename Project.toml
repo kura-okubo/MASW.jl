@@ -1,0 +1,13 @@
+name = "MASW"
+uuid = "a6dcc7ff-e019-4a59-a0bc-6547b5210b75"
+authors = ["kurama"]
+version = "0.1.0"
+
+[compat]
+julia = "1.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
