@@ -11,6 +11,8 @@ matrix:
   allow_failures:
     - julia: nightly
   fast_finish: true
+before_install:
+  - julia -e 'import Pkg; Pkg.add("JLD2")'
 notifications:
   email: false
 after_success:
