@@ -1,11 +1,12 @@
 using MASW
-using JLD2, Plots
+using JLD2
 using Test
 
 @testset "MASW.jl" begin
     # Write your own tests here.
 
-    Plots.pyplot()
+    # Travis is not working with Pyplot.
+    #Plots.pyplot()
 
     #===
     # example to run masw(). Example and SampleData are based on matlab script written by John Schuh.
@@ -34,13 +35,13 @@ using Test
     x = min_x:d_x:max_x; # spatial sampling vector (receiver position)
     t=1/fs:1/fs:length(U[:,1])/fs;  # time vector in seconds
 
-    figdir = "./"
-    figname = "dispersionimage.png"
+    # figdir = "./"
+    # figname = "dispersionimage.png"
 
     ct=300:1:1200;
     freqlimits=(15.0, 80.0);
 
-    (f, ct, Udisp, DispersionCurve)=masw(U, x, t, ct, plotfreqlimits=freqlimits,figdir="./",figname="functiontest.png")
+    (f, ct, Udisp, DispersionCurve)=masw(U, x, t, ct, plotfreqlimits=freqlimits)
 
     @test f[1] == 0.0
     @test ct[1] == 300
